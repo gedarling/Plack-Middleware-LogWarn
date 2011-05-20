@@ -1,8 +1,8 @@
 use strict;
+use warnings;
 use Plack::Test;
 use Test::More;
 use Test::Deep;
-use lib 'lib';
 use Plack::Middleware::LogWarn;
 use HTTP::Request::Common;
 
