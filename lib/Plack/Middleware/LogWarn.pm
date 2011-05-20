@@ -1,4 +1,7 @@
 package Plack::Middleware::LogWarn;
+
+# ABSTRACT: converts to warns to log messages
+
 use strict;
 use warnings;
 use parent qw( Plack::Middleware );
