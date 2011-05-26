@@ -27,18 +27,18 @@ __END__
 
 =head1 SYNOPSIS
 
-builder {
-   enable 'LogWarn';
-   $app;
-}
+ builder {
+    enable 'LogWarn';
+    $app;
+ }
 
-# use it with another logger middleware
+ # use it with another logger middleware
 
-builder {
-   enable 'LogWarn';
-   enable 'Log4perl', category => 'plack', conf => '/path/to/log4perl.conf';
-   $app;
-}
+ builder {
+    enable 'LogWarn';
+    enable 'Log4perl', category => 'plack', conf => '/path/to/log4perl.conf';
+    $app;
+ }
 
 =head1 DESCRIPTION
 
